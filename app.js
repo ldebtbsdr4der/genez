@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const net = require('net');
 const { WebSocket, createWebSocketStream } = require('ws');
-const uuid = (process.env.UUID || '8c93ea6d-87a9-4565-b60d-fc1490950ad1').replace(/-/g, '');
-const port = process.env.PORT || 8080;
+const uuid = (process.env.UUID || '136ea171-eba0-4d86-8c02-03a695bc0dd8').replace(/-/g, '');
+const port = process.env.PORT || 3000;
 
 const wss = new WebSocket.Server({ port });
 wss.on('connection', ws => {
